@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>E2E Test Dapp</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>Count: <span id="count">?</span></h1>
+
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+
+    <main class="container-fluid">
+      <section>
+        <button
+          class="btn btn-primary btn-lg btn-block mb-3 enableEthereumButton"
+          id="connectButton"
+        >
+          Connect
+        </button>
+        <h2>Account: <span class="showAccount"></span></h2>
+
+        <h4 class="card-title">Send Eth</h4>
+
+        <button class="btn btn-primary btn-lg btn-block mb-3" id="sendButton">
+          Send
+        </button>
+        <h3 class="card-title">Status</h3>
+
+        <div class="row">
+          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+            <p class="info-text alert alert-primary">
+              Network: <span id="network"></span>
+            </p>
+          </div>
+
+          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+            <p class="info-text alert alert-secondary">
+              ChainId: <span id="chainId"></span>
+            </p>
+          </div>
+
+          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+            <p class="info-text alert alert-success">
+              Accounts: <span id="accounts"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row d-flex justify-content-center">
+          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Basic Actions</h4>
+
+                <button
+                  class="btn btn-primary btn-lg btn-block mb-3"
+                  id="connectButton"
+                  disabled
+                >
+                  Connect
+                </button>
+
+                <button
+                  class="btn btn-primary btn-lg btn-block mb-3"
+                  id="getAccounts"
+                >
+                  eth_accounts
+                </button>
+
+                <p class="info-text alert alert-secondary">
+                  eth_accounts result: <span id="getAccountsResult"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row d-flex justify-content-center">
+          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Permissions Actions</h4>
+
+                <button
+                  class="btn btn-primary btn-lg btn-block mb-3"
+                  id="requestPermissions"
+                >
+                  Request Permissions
+                </button>
+
+                <button
+                  class="btn btn-primary btn-lg btn-block mb-3"
+                  id="getPermissions"
+                >
+                  Get Permissions
+                </button>
+
+                <p class="info-text alert alert-secondary">
+                  Permissions result: <span id="permissionsResult"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.5.2/ethers.umd.min.js"
+      integrity="sha512-PtOcu3WZTldHT+VjAJdWV5ss+iGebEgc1h5olJuxUNPvKuC0VOZsk1UhNgQYi5oIyrNHhdIOw8WQMdZwBv1MyQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
