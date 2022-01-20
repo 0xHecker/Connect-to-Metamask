@@ -37,8 +37,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -65,8 +64,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.10+commit.fc410830\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"method\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"count\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"}],\"name\":\"Count\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"count\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decrease\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"increase\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Tally.sol\":\"Tally\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Tally.sol\":{\"keccak256\":\"0x783a8df58f1bd1ee15819adf4dc7508196e499310cbc4c0663bdbb3d03b903cc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a5f394306c12ab9945a018722b9e89dba1e26d606f8fb05b0afb177185ee7d44\",\"dweb:/ipfs/QmWpYtd2gngkj1eXKjTfuiNbxkDmvEHnZWjoH2g23y8SUV\"]}},\"version\":1}",
@@ -1791,7 +1789,7 @@
   "sourceMap": "59:413:1:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "59:413:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;81:17;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;392:77;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;281:105;;;:::i;:::-;;170;;;:::i;:::-;;81:17;;;;:::o;392:77::-;433:4;456:5;;449:12;;392:77;:::o;281:105::-;319:5;;:7;;;;;;;;;:::i;:::-;;;;;;341:36;359:5;;366:10;341:36;;;;;;;:::i;:::-;;;;;;;;281:105::o;170:::-;208:5;;:7;;;;;;;;;:::i;:::-;;;;;;231:36;249:5;;256:10;231:36;;;;;;;:::i;:::-;;;;;;;;170:105::o;7:77:2:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o;442:180::-;490:77;487:1;480:88;587:4;584:1;577:15;611:4;608:1;601:15;628:171;667:3;690:24;708:5;690:24;:::i;:::-;681:33;;736:4;729:5;726:15;723:41;;;744:18;;:::i;:::-;723:41;791:1;784:5;780:13;773:20;;628:171;;;:::o;805:169::-;889:11;923:6;918:3;911:19;963:4;958:3;954:14;939:29;;805:169;;;;:::o;980:158::-;1120:10;1116:1;1108:6;1104:14;1097:34;980:158;:::o;1144:365::-;1286:3;1307:66;1371:1;1366:3;1307:66;:::i;:::-;1300:73;;1382:93;1471:3;1382:93;:::i;:::-;1500:2;1495:3;1491:12;1484:19;;1144:365;;;:::o;1515:126::-;1552:7;1592:42;1585:5;1581:54;1570:65;;1515:126;;;:::o;1647:96::-;1684:7;1713:24;1731:5;1713:24;:::i;:::-;1702:35;;1647:96;;;:::o;1749:118::-;1836:24;1854:5;1836:24;:::i;:::-;1831:3;1824:37;1749:118;;:::o;1873:639::-;2095:4;2133:2;2122:9;2118:18;2110:26;;2182:9;2176:4;2172:20;2168:1;2157:9;2153:17;2146:47;2210:131;2336:4;2210:131;:::i;:::-;2202:139;;2351:72;2419:2;2408:9;2404:18;2395:6;2351:72;:::i;:::-;2433;2501:2;2490:9;2486:18;2477:6;2433:72;:::i;:::-;1873:639;;;;;:::o;2518:233::-;2557:3;2580:24;2598:5;2580:24;:::i;:::-;2571:33;;2626:66;2619:5;2616:77;2613:103;;;2696:18;;:::i;:::-;2613:103;2743:1;2736:5;2732:13;2725:20;;2518:233;;;:::o;2757:158::-;2897:10;2893:1;2885:6;2881:14;2874:34;2757:158;:::o;2921:365::-;3063:3;3084:66;3148:1;3143:3;3084:66;:::i;:::-;3077:73;;3159:93;3248:3;3159:93;:::i;:::-;3277:2;3272:3;3268:12;3261:19;;2921:365;;;:::o;3292:639::-;3514:4;3552:2;3541:9;3537:18;3529:26;;3601:9;3595:4;3591:20;3587:1;3576:9;3572:17;3565:47;3629:131;3755:4;3629:131;:::i;:::-;3621:139;;3770:72;3838:2;3827:9;3823:18;3814:6;3770:72;:::i;:::-;3852;3920:2;3909:9;3905:18;3896:6;3852:72;:::i;:::-;3292:639;;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.8.10;\n\ncontract Tally {\n\n    uint public count;\n    \n    event Count(string method, uint count, address caller);\n\n    function increase() public {\n\n        count++;\n\n        emit Count('Increase', count, msg.sender);\n\n    }\n\n    function decrease() public {\n\n        count--;\n        emit Count('Decrease', count, msg.sender); \n\n    }\n\n    function getCount() public view returns (uint) {\n        return count; \n    }\n\n}",
-  "sourcePath": "/home/shanmukh/Projects/blockchain/Connect-JavaScript-to-MetaMask-with-Web3/contracts/Tally.sol",
+  "sourcePath": "/home/shanmukh/Projects/blockchain/Connect-to-Metamask/contracts/Tally.sol",
   "ast": {
     "absolutePath": "project:/contracts/Tally.sol",
     "exportedSymbols": {
@@ -2987,8 +2985,7 @@
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-18T11:48:14.728Z",
-  "networkType": "ethereum",
+  "updatedAt": "2022-01-19T13:41:34.969Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

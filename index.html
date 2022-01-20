@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css"
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
   </head>
@@ -21,108 +21,37 @@
   <body>
     <h1>Count: <span id="count">?</span></h1>
 
-    <button id="increase">+</button>
-    <button id="decrease">-</button>
+    <button
+      id="increase"
+      class="mx-auto rounded-md p-2 bg-green-500 text-white"
+    >
+      +
+    </button>
+    <button id="decrease" class="mx-auto rounded-md p-2 bg-red-500 text-white">
+      -
+    </button>
 
-    <main class="container-fluid">
-      <section>
-        <button
-          class="btn btn-primary btn-lg btn-block mb-3 enableEthereumButton"
-          id="connectButton"
-        >
-          Connect
-        </button>
-        <h2>Account: <span class="showAccount"></span></h2>
+    <div class="flex-col space-y-2 justify-center items-center">
+      <button
+        id="loginButton"
+        onclick=""
+        class="mx-auto rounded-md p-2 bg-purple-500 text-white"
+      >
+        Login with MetaMask
+      </button>
+      <p id="NetworkID" class="text-lg text-gray-600 my-2"></p>
+    </div>
 
-        <h4 class="card-title">Send Eth</h4>
-
-        <button class="btn btn-primary btn-lg btn-block mb-3" id="sendButton">
-          Send
-        </button>
-        <h3 class="card-title">Status</h3>
-
-        <div class="row">
-          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
-            <p class="info-text alert alert-primary">
-              Network: <span id="network"></span>
-            </p>
-          </div>
-
-          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
-            <p class="info-text alert alert-secondary">
-              ChainId: <span id="chainId"></span>
-            </p>
-          </div>
-
-          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
-            <p class="info-text alert alert-success">
-              Accounts: <span id="accounts"></span>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="row d-flex justify-content-center">
-          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Basic Actions</h4>
-
-                <button
-                  class="btn btn-primary btn-lg btn-block mb-3"
-                  id="connectButton"
-                  disabled
-                >
-                  Connect
-                </button>
-
-                <button
-                  class="btn btn-primary btn-lg btn-block mb-3"
-                  id="getAccounts"
-                >
-                  eth_accounts
-                </button>
-
-                <p class="info-text alert alert-secondary">
-                  eth_accounts result: <span id="getAccountsResult"></span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="row d-flex justify-content-center">
-          <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Permissions Actions</h4>
-
-                <button
-                  class="btn btn-primary btn-lg btn-block mb-3"
-                  id="requestPermissions"
-                >
-                  Request Permissions
-                </button>
-
-                <button
-                  class="btn btn-primary btn-lg btn-block mb-3"
-                  id="getPermissions"
-                >
-                  Get Permissions
-                </button>
-
-                <p class="info-text alert alert-secondary">
-                  Permissions result: <span id="permissionsResult"></span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    <div class="flex-col space-y-2 justify-center items-center">
+      <button
+        id="getAccounts"
+        onclick=""
+        class="mx-auto rounded-md p-2 bg-purple-500 text-white"
+      >
+        click to get accounts
+      </button>
+      <p id="getAccountsResult" class="text-lg text-gray-600 my-2"></p>
+    </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.5.2/ethers.umd.min.js"
       integrity="sha512-PtOcu3WZTldHT+VjAJdWV5ss+iGebEgc1h5olJuxUNPvKuC0VOZsk1UhNgQYi5oIyrNHhdIOw8WQMdZwBv1MyQ=="
@@ -130,6 +59,6 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script src="index.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>
